@@ -41,7 +41,7 @@ const menuItems: MenuItem[] = [
     name: "Lamb Chops",
     description: "Tender lamb chops marinated with rosemary and garlic, grilled to perfection.",
     price: "$32.99",
-    image: "https://plus.unsplash.com/premium_photo-1664472636118-8ac71b125bf4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    image: "https://images.unsplash.com/photo-1432139555190-58524dae6a55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80",
     category: "main"
   },
   {
@@ -88,7 +88,7 @@ const Menu = () => {
 
   return (
     <Layout>
-      <div className="pt-32 pb-16 bg-gray-50">
+      <div className="pt-32 pb-16">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 font-playfair text-restaurant-charcoal">
