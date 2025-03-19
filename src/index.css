@@ -8,32 +8,32 @@
 @layer base {
   :root {
     --background: 40 50% 98%;
-    --foreground: 20 14.3% 4.1%;
+    --foreground: 0 0% 0%; /* Changed to pure black */
 
     --card: 0 0% 100%;
-    --card-foreground: 20 14.3% 4.1%;
+    --card-foreground: 0 0% 0%; /* Changed to pure black */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 20 14.3% 4.1%;
+    --popover-foreground: 0 0% 0%; /* Changed to pure black */
 
     --primary: 0 59% 25%;
     --primary-foreground: 60 9.1% 97.8%;
 
     --secondary: 43 74% 52%;
-    --secondary-foreground: 26 83.3% 14.1%;
+    --secondary-foreground: 0 0% 0%; /* Changed to pure black */
 
     --muted: 60 4.8% 95.9%;
-    --muted-foreground: 25 5.3% 44.7%;
+    --muted-foreground: 0 0% 0%; /* Changed to pure black */
 
     --accent: 43 74% 52%;
-    --accent-foreground: 24 9.8% 10%;
+    --accent-foreground: 0 0% 0%; /* Changed to pure black */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 60 9.1% 97.8%;
 
     --border: 20 5.9% 90%;
     --input: 20 5.9% 90%;
-    --ring: 20 14.3% 4.1%;
+    --ring: 0 0% 0%; /* Changed to pure black */
     --radius: 0.5rem;
   }
 
@@ -47,7 +47,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-playfair;
+    @apply font-playfair text-black; /* Added text-black for all headings */
   }
 }
 
@@ -61,7 +61,7 @@
   }
   
   .btn-secondary {
-    @apply bg-restaurant-gold hover:bg-opacity-90 text-restaurant-charcoal font-medium py-3 px-6 rounded-md transition-all duration-300 inline-flex items-center justify-center;
+    @apply bg-restaurant-gold hover:bg-opacity-90 text-black font-medium py-3 px-6 rounded-md transition-all duration-300 inline-flex items-center justify-center;
   }
   
   .btn-outline {
@@ -69,11 +69,15 @@
   }
   
   .section-title {
-    @apply text-4xl md:text-5xl font-bold text-restaurant-charcoal mb-4 font-playfair;
+    @apply text-4xl md:text-5xl font-bold text-black mb-4 font-playfair; /* Changed from restaurant-charcoal to black */
   }
   
   .section-subtitle {
-    @apply text-xl text-restaurant-dark-brown/80 mb-8 max-w-3xl mx-auto;
+    @apply text-xl text-black/80 mb-8 max-w-3xl mx-auto; /* Changed from restaurant-dark-brown/80 to black/80 */
+  }
+
+  .text-gold {
+    @apply text-restaurant-gold;
   }
 }
 
@@ -118,3 +122,4 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #6a001a;
 }
+

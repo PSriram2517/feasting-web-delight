@@ -91,10 +91,10 @@ const Menu = () => {
       <div className="pt-32 pb-16">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 font-playfair text-restaurant-charcoal">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 font-playfair text-black">
               Our Menu
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-black/70 max-w-3xl mx-auto">
               Explore our curated selection of premium non-vegetarian dishes, crafted with passion and the finest ingredients
             </p>
           </div>
@@ -108,7 +108,7 @@ const Menu = () => {
                   className={`px-4 py-2 rounded-md capitalize transition-all ${
                     activeCategory === category
                       ? "bg-restaurant-burgundy text-white"
-                      : "bg-white text-gray-700 hover:bg-gray-100"
+                      : "bg-white text-black hover:bg-gray-100"
                   }`}
                 >
                   {category}
@@ -132,16 +132,16 @@ const Menu = () => {
                 </div>
                 <div className="p-6">
                   <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-xl font-bold text-restaurant-charcoal">
+                    <h3 className="text-xl font-bold text-black">
                       {item.name}
                     </h3>
-                    <span className="text-restaurant-burgundy font-bold">
+                    <span className="text-restaurant-gold font-bold">
                       {item.price}
                     </span>
                   </div>
-                  <p className="text-gray-600">{item.description}</p>
+                  <p className="text-black/70">{item.description}</p>
                   <div className="mt-4">
-                    <button className="bg-restaurant-gold hover:bg-restaurant-gold/90 text-restaurant-charcoal font-medium py-2 px-4 rounded-md transition-all duration-300 text-sm">
+                    <button className="bg-restaurant-gold hover:bg-restaurant-gold/90 text-black font-medium py-2 px-4 rounded-md transition-all duration-300 text-sm">
                       Add to Order
                     </button>
                   </div>
